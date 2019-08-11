@@ -3,4 +3,4 @@
 - You just only change value at variable clock and bitrate on this file.
 - Formula : 
   - prescaler*(Seg1 + Seg2 + 1) = Clock/bitrate
-  - sample_point = Seg1/(Seg1+Seg2)
+  - sample_point = (Seg1 + Sync_Seg)/(Seg1 + Seg2 + Sync_Seg)
