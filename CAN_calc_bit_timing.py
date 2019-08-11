@@ -17,4 +17,4 @@ for i in range(int(ratio)):
         for j in seg1:
             out2 = int(ratio)/prescale[i] - 1 - j
             if (out2 > 0) and (out2 <= max(seg2)) and (float(j+1)/(j+out2+1) > 0.65):
-                print("prescale: ", prescale[i], "segment_1: ", j , "segment_2: ", out2, "sample_point: ", (j+1)/(j+out2+1), "SJW: ", sjw)
+                print("prescale: ", prescale[i], "segment_1: ", j , "segment_2: ", out2, "sample_point: ", float(j+1)/(j+out2+1), "SJW: ", sjw)
